@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import M from 'materialize-css/dist/js/materialize.min.js';
 
-const AddLogModal = () => {
+const EditLogModal = () => {
 
   const [message, setMessage] = useState('');
   const [attention, setAttention] = useState(false);
@@ -21,7 +21,7 @@ const AddLogModal = () => {
   }
 
   return (
-    <div id="add-log-modal" className="modal" style={modalStyle}>
+    <div id="edit-log-modal" className="modal" style={modalStyle}>
       <div className="modal-content">
         <h4>Enter system log</h4>
         <div className="row">
@@ -74,4 +74,4 @@ const btnStyle = {
   marginLeft: '17px'
 }
 
-export default AddLogModal;
+export default EditLogModal;
